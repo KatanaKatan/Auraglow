@@ -1,0 +1,44 @@
+.intro {
+	background: #08263f;
+}
+
+.intro__content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 30px;
+
+	min-height: 519px;
+
+	padding: 60px 0;
+}
+
+.intro__title {
+	font-size: 19px;
+	line-height: 30px;
+	text-align: center;
+
+	color: #fed097;
+}
+
+.intro__text {
+	font-size: 36px;
+	line-height: 46px; /*при уменьшении размера экрана, лучше line-height прописывать через множитель. Множитель равен размеру font size*/
+	text-align: center;
+
+	max-width: 850px;
+	color: #ffffff;
+}
+
+@media (max-width: 768px) {
+	.intro__text {
+		font-size: 30px;
+	}
+}
+
+@media (max-width: 400px) {
+	.intro__text {
+		font-size: 26px;
+	}
+}

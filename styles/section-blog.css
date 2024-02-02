@@ -1,0 +1,138 @@
+.blog {
+	margin-top: 85px;
+}
+
+.blog__container {
+	max-width: 1120px;
+}
+
+.blog__block:last-child {
+	margin-top: 100px;
+}
+
+.blog__block:last-child .blog__block__content {
+	background-color: #fbeed7;
+}
+
+.blog__block__content {
+	background-color: #edf3f6;
+	display: flex;
+	flex-direction: column;
+	gap: 55px;
+}
+
+.blog__block__title {
+	color: #031622;
+	font-size: 36px;
+	line-height: 1.1;
+}
+
+.blog__block__text {
+	color: #031622;
+	font-size: 16px;
+	line-height: 24px;
+	flex-grow: 1;
+}
+
+.blog__block__btn button {
+	color: #031622;
+	font-size: 16px;
+	line-height: 1.5;
+	border-radius: 27px;
+	border: 1px solid #031622;
+	padding: 15px 35px;
+	transition: all 0.2s;
+}
+
+.blog__block__btn button:hover {
+	background-color: #031622;
+	color: #fff;
+}
+
+@media (min-width: 1025px) {
+	.blog__block {
+		position: relative;
+	}
+
+	.blog__block:last-child {
+		display: flex;
+		justify-content: flex-end;
+		margin-top: 170px;
+	}
+
+	.blog__block__content {
+		position: absolute;
+		top: 105px;
+		right: 0;
+
+		max-width: 418px;
+		min-height: 480px;
+		padding: 93px 50px 20px;
+	}
+
+	.blog__block:last-child .blog__block__content {
+		top: 70px;
+		left: 0;
+	}
+
+	.blog__img {
+		max-width: 78.7%;
+	}
+}
+
+@media (max-width: 1024px) {
+	.blog__block {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.blog__block__content {
+		padding: 50px;
+	}
+
+	.blog__img img {
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+	.blog__block:last-child .blog__img {
+		grid-column-start: 2;
+		grid-row-start: 1;
+	}
+}
+
+@media (max-width: 768px) {
+	.blog {
+		margin-top: 50px;
+	}
+
+	.blog__block {
+		grid-template-columns: 1fr;
+	}
+
+	.blog__block:last-child {
+		margin-top: 50px;
+	}
+}
+
+@media (max-width: 425px) {
+	.blog__block:last-child .blog__img {
+		min-height: 250px;
+	}
+
+	.blog__block__content {
+		padding: 28px;
+		gap: 30px;
+	}
+
+	.blog__block__title {
+		font-size: 28px;
+	}
+
+	.blog__block__btn button {
+		font-size: 15px;
+		padding: 6px 22px;
+	}
+}
